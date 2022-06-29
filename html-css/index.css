@@ -5,6 +5,7 @@
   --dark-text-dimmed: #707070;
   --blue-bg: linear-gradient(90deg, #172c46, #292e5e);
   --light-bg: #f5f5f5;
+  --dark-bg: #3c4252;
 }
 
 * {
@@ -18,6 +19,7 @@ body {
     Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: center;
   background-color: var(--light-bg);
+  color: var(--dark-text);
 }
 
 /* Typography */
@@ -73,7 +75,72 @@ p {
   height: 280px;
   color: var(--dark-text);
   background-color: #fff;
-  border: 1px solid red;
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .type {
+  height: 36px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: var(--light-text);
+  background-color: var(--dark-bg);
+  padding: 0 20px;
+}
+
+.card .price {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px 20px;
+}
+
+.price::after {
+  content: '';
+  width: 100%;
+  border-bottom: 1px solid #c7c7c7;
+  margin-top: 20px;
+}
+
+.price sup {
+  font-size: 18px;
+  vertical-align: top;
+  color: var(--dark-text-dimmed);
+}
+
+.price sub {
+  font-size: 12px;
+  vertical-align: baseline;
+  color: var(--dark-text-dimmed);
+}
+
+.price p {
+  font-size: 54px;
+  word-spacing: -10px;
+  line-height: 1;
+}
+
+.card .details {
+  padding: 20px;
+}
+
+.details p {
+  font-size: 12px;
+  text-align: left;
+}
+
+.card button {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  background-color: #039be5;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 24px;
 }
 /* ----- */
 
