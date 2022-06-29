@@ -84,6 +84,14 @@ p {
   transition: 200ms ease-in;
 }
 
+.card:nth-child(2) .type::after {
+  width: 100%;
+  content: 'save 15%';
+  text-transform: capitalize;
+  font-size: 12px;
+  text-align: right;
+}
+
 .card .type {
   height: 36px;
   display: flex;
