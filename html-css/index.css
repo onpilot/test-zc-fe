@@ -193,3 +193,9 @@ p {
   margin-bottom: 8px;
 }
 /* ----- */
+
+/* Additional style for selected card */
+.selected {
+  border: 2px solid hotpink;
+}
+/* ----- */
