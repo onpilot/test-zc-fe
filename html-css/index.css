@@ -19,3 +19,64 @@ body {
   text-align: center;
   background-color: var(--light-bg);
 }
+
+/* Typography */
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+h2 {
+  font-size: 32px;
+  font-weight: normal;
+}
+p {
+  max-width: 420px;
+  margin: 0 auto;
+}
+/* ----- */
+
+/* Pricing section */
+#pricing {
+  height: 400px;
+  color: var(--light-text);
+  background-image: var(--blue-bg);
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 250px;
+}
+
+.message h1 {
+  margin-bottom: 20px;
+}
+
+.message p {
+  color: var(--light-text-dimmed);
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards .grid-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 210px);
+}
+
+.cards .card {
+  height: 280px;
+  color: var(--dark-text);
+  background-color: #fff;
+  border: 1px solid red;
+}
+/* ----- */
+
+#faqs {
+  margin-top: 200px;
+}
