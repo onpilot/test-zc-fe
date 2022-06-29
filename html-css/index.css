@@ -144,6 +144,28 @@ p {
 }
 /* ----- */
 
+/* FAQS section */
 #faqs {
+  color: var(--dark-text-dimmed);
   margin-top: 200px;
 }
+
+#faqs h2 {
+  margin-bottom: 72px;
+}
+
+#faqs .boxes {
+  display: flex;
+  text-align: left;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.boxes .box {
+  margin: 0 20px;
+}
+
+.box p:nth-child(1) {
+  margin-bottom: 8px;
+}
+/* ----- */
